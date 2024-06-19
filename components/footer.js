@@ -8,7 +8,7 @@ export default function Footer(props) {
         Copyright © {new Date().getFullYear()} {props?.copyright}.
         All rights reserved.
       </div>
-      <div className="mt-2 flex items-center justify-between">
+      <div className="absolute right-[100px] flex items-center justify-between">
         <ThemeSwitch />
       </div>
     </Container>
