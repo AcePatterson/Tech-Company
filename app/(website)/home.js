@@ -8,48 +8,51 @@ export default function Home() {
       <Container>
         <div className="grid gap-10 md:grid-cols-2 lg:gap-10 ">
           <Post
-            aspect={
-              "Architectural Engineering Wonders of the modern era for your Inspiration"
-            }
-            imagePath={"/post/Lafleur1.jpg"}
+            aspect={"Armory is web3 community to get items!"}
+            imagePath={"/post/armory.png"}
             PostedDate={"October 21, 2022"}
             author={"Mario Sanchez"}
           />
           <Post
             aspect={
-              "Architectural Engineering Wonders of the modern era for your Inspiration"
+              "Amino Rewards is a feature within the Amino app, a social networking healthy app for communities."
             }
-            imagePath={"/post/Lafleur1.jpg"}
+            imagePath={"/post/aminorewards.png"}
             PostedDate={"October 21, 2022"}
             author={"Mario Sanchez"}
           />
           <Post
             aspect={
-              "Architectural Engineering Wonders of the modern era for your Inspiration"
+              "Ceras Health is a healthcare company that provides innovative solutions for managing chronic conditions."
             }
-            imagePath={"/post/Lafleur1.jpg"}
+            imagePath={"/post/cerashealth.png"}
             PostedDate={"October 21, 2022"}
             author={"abc"}
           />
           <Post
             aspect={
-              "Architectural Engineering Wonders of the modern era for your Inspiration"
+              "Bloxmoon is an online gambling platform that offers a wide range of casino games, including slots, table games, live dealer games, and more."
             }
-            imagePath={"/post/Lafleur1.jpg"}
+            imagePath={"/post/bloxmoon.png"}
             PostedDate={"October 21, 2022"}
             author={"abc"}
           />
           <Post
             aspect={
-              "Architectural Engineering Wonders of the modern era for your Inspiration"
+              "CBET Casino is an online gambling platform that offers a wide range of casino games, including slots, table games, live dealer games, and more."
             }
-            imagePath={"/post/Lafleur1.jpg"}
+            imagePath={"/post/cbet.png"}
             PostedDate={"October 21, 2022"}
             author={"abc"}
           />
-          <Post />
-          <Post />
-          <Post />
+          <Post
+            aspect={
+              "AI-powered location technology for automakers, mobile app developers, and logistics services."
+            }
+            imagePath={"/post/mapbox.png"}
+            PostedDate={"October 21, 2022"}
+            author={"abc"}
+          />
         </div>
         <div className="mt-10 flex justify-center">
           <Link
