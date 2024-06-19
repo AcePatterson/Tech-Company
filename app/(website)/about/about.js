@@ -47,15 +47,13 @@ export default function About() {
 
       <div className="prose mx-auto mt-14 text-center dark:prose-invert">
         <p>
-          We provide real-time connectivity to enable software
-          providers and financial institutions to build integrated
-          products for their small business customers.
-        </p>
-        <p>
-          Our API infrastructure is leveraged by clients ranging from
-          lenders to corporate card providers and business forecasting
-          tools, with use cases including automatic reconciliation,
-          business dashboarding, and loan decisioning.
+          At Tech Innovate, we pride ourselves on being a trusted
+          partner for businesses seeking to harness the power of
+          Information Technology to enhance their operations and
+          achieve their strategic goals. With a team of experienced IT
+          professionals and a proven track record of success, we are
+          dedicated to delivering tailored solutions that meet your
+          unique needs and drive business growth.
         </p>
         <p>
           <Link href="/contact">Get in touch</Link>

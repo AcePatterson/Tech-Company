@@ -1,15 +1,15 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import Container from "@/components/container";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
-import { Flip, ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import {
   MapPinIcon,
   EnvelopeIcon,
-  PhoneIcon
+  PhoneIcon,
+  PaperAirplaneIcon
 } from "@heroicons/react/24/outline";
 export default function Contact({ settings }) {
   const {
@@ -24,31 +24,24 @@ export default function Contact({ settings }) {
     mode: "onTouched"
   });
   const [isSuccess, setIsSuccess] = useState(false);
-  const [state, setState] = useState(false);
-
-  const notify = () => toast("Successfully message sent!");
+  const [message, setMessage] = useState(false);
   // Please update the Access Key in the Sanity CMS - Site Congig Page
-
-  useEffect(() => {
-    const btn = document.getElementById("btn");
-    if (state == true) notify();
-    setState(false);
-  }, [state]);
-
   const apiKey = settings?.w3ckey || "YOUR_ACCESS_KEY_HERE";
 
   const { submit: onSubmit } = useWeb3Forms({
     access_key: apiKey,
     settings: {
-      from_name: "Stablo Template",
-      subject: "New Contact Message from Stablo Website"
+      from_name: "Tech Innovate Template",
+      subject: "New Contact Message from Tech Innovate Website"
     },
     onSuccess: (msg, data) => {
       setIsSuccess(true);
+      setMessage(msg);
       reset();
     },
     onError: (msg, data) => {
       setIsSuccess(false);
+      setMessage(msg);
     }
   });
 
@@ -64,11 +57,18 @@ export default function Contact({ settings }) {
       <div className="my-10 grid md:grid-cols-2">
         <div className="my-10">
           <h2 className="text-2xl font-semibold dark:text-white">
-            Contact Stablo
+            Contact Us
           </h2>
           <p className="mt-5 max-w-sm">
-            Have something to say? We are here to help. Fill up the
-            form or send email or call phone.
+            Ready to take your business to the next level with Tech
+            Innovate? Contact us today to schedule a consultation and
+            discover how our IT solutions can help you achieve your
+            business objectives.
+          </p>
+          <p className="mt-5 max-w-sm">
+            Thank you for visiting Tech Innovate, where innovation
+            meets technology to drive success in today's digital
+            landscape.
           </p>
 
           <div className="mt-5">
@@ -86,6 +86,26 @@ export default function Contact({ settings }) {
               <PhoneIcon className="h-4 w-4" />
               <a href={`tel:${"+1(484)809-9633"}`}>
                 {"+1(484)809-9633"}
+              </a>
+            </div>
+            <div className="text-dark-600 mt-2 flex items-center space-x-2 dark:text-gray-400">
+              <PaperAirplaneIcon className="h-4 w-4" />
+              <a
+                href="https://t.me/abcdev_world"
+                style={{ color: "black" }}
+                target="_blank"
+                rel="noreferrer">
+                Join By Telegram
+              </a>
+            </div>
+            <div className="text-dark-600 mt-2 flex items-center space-x-2 dark:text-gray-400">
+              <PaperAirplaneIcon className="h-4 w-4" />
+              <a
+                href="https://discord.gg/SYJWZUxD"
+                style={{ color: "black" }}
+                target="_blank"
+                rel="noreferrer">
+                Join Our Discord Server
               </a>
             </div>
           </div>
@@ -174,8 +194,6 @@ export default function Contact({ settings }) {
 
             <button
               type="submit"
-              id="btn"
-              onClick={() => setState(true)}
               className="w-full rounded-md bg-gray-900 px-7 py-4 font-semibold text-white transition-colors hover:bg-gray-800 focus:outline-none focus:ring focus:ring-gray-200 focus:ring-offset-2 dark:bg-white dark:text-black ">
               {isSubmitting ? (
                 <svg
@@ -201,27 +219,18 @@ export default function Contact({ settings }) {
             </button>
           </form>
 
-          {/* {isSubmitSuccessful && isSuccess && notify()} */}
-          {/* {isSubmitSuccessful && !isSuccess && (
+          {isSubmitSuccessful && isSuccess && (
+            <div className="mt-3 text-center text-sm text-green-500">
+              Successfully message sent!
+            </div>
+          )}
+          {isSubmitSuccessful && !isSuccess && (
             <div className="mt-3 text-center text-sm text-red-500">
               {message || "Something went wrong. Please try later."}
             </div>
-          )} */}
+          )}
         </div>
       </div>
-      <ToastContainer
-        position="top-right"
-        autoClose={2000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-        transition={Flip}
-      />
     </Container>
   );
 }

@@ -18,10 +18,6 @@ export default function Navbar() {
     {
       label: "About",
       href: "/about"
-    },
-    {
-      label: "Contact",
-      href: "/contact"
     }
   ];
 
@@ -29,16 +25,20 @@ export default function Navbar() {
     {
       label: "Archive",
       href: "/archive"
+    },
+    {
+      label: "Contact",
+      href: "/contact"
     }
     // {
     //   label: "Pro Version",
-    //   href: "https://stablo-pro.web3templates.com/",
+    //   href: "https://Tech Innovate-pro.web3templates.com/",
     //   external: true,
     //   badge: "new"
     // },
     // {
     //   label: "Download",
-    //   href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
+    //   href: "https://web3templates.com/templates/Tech Innovate-minimal-blog-website-template",
     //   external: true
     // }
   ];
@@ -75,9 +75,9 @@ export default function Navbar() {
                   ))}
                 </div>
                 <div className="flex w-full items-center justify-between md:w-auto">
-                  <Link href="/" className="w-28 dark:hidden">
-                    <span className="block text-center text-5xl">
-                      𝓪𝓫𝓬
+                  <Link href="/" className="w-50 dark:hidden">
+                    <span className="block text-center text-3xl">
+                      ꧁༺ 𝓣𝓮𝓬𝓱 𝓘𝓷𝓷𝓸𝓿𝓪𝓽𝓮 ༻꧂
                     </span>
                   </Link>
                   <Disclosure.Button
