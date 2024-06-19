@@ -77,7 +77,7 @@ export default function Navbar() {
                 <div className="flex w-full items-center justify-between md:w-auto">
                   <Link href="/" className="w-50 dark:hidden">
                     <span className="block text-center text-3xl">
-                      ꧁༺ 𝓣𝓮𝓬𝓱 𝓘𝓷𝓷𝓸𝓿𝓪𝓽𝓮 ༻꧂
+                      𝓣𝓮𝓬𝓱 𝓘𝓷𝓷𝓸𝓿𝓪𝓽𝓮
                     </span>
                   </Link>
                   <Disclosure.Button
