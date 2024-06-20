@@ -73,7 +73,9 @@ export default function Navbar() {
                   ))}
                 </div>
                 <div className="flex w-full items-center justify-between md:w-auto">
-                  <Link href="/" className="w-50 dark:hidden">
+                  <Link
+                    href="/"
+                    className="w-50 text-dark-600 dark:text-gray-400">
                     <span className="block text-center text-3xl">
                       𝓣𝓮𝓬𝓱 𝓘𝓷𝓷𝓸𝓿𝓪𝓽𝓮
                     </span>

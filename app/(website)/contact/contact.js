@@ -56,7 +56,7 @@ export default function Contact({ settings }) {
       <div className="my-10 grid md:grid-cols-2">
         <div className="my-10">
           <h2 className="text-2xl font-semibold dark:text-white">
-            Contact Us
+            Contact Tech Innovate
           </h2>
           <p className="mt-5 max-w-sm">
             Ready to take your business to the next level with Tech
@@ -91,7 +91,7 @@ export default function Contact({ settings }) {
               <BiLogoTelegram className="h-4 w-4" />
               <a
                 href="https://t.me/abcdev_world"
-                style={{ color: "black" }}
+                className="text-dark-600 dark:text-gray-400"
                 target="_blank"
                 rel="noreferrer">
                 Join By Telegram
@@ -101,7 +101,7 @@ export default function Contact({ settings }) {
               <FaDiscord className="h-4 w-4" />
               <a
                 href="https://discord.gg/SYJWZUxD"
-                style={{ color: "black" }}
+                className="text-dark-600 dark:text-gray-400"
                 target="_blank"
                 rel="noreferrer">
                 Join Our Discord Server
