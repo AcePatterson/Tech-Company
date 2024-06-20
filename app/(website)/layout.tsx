@@ -11,12 +11,12 @@ async function sharedMetaData(params) {
     },
     description:
       "Tech Innovate - Harnessing IT for business success.",
-    keywords: ["Next.js", "Sanity", "Tailwind CSS"],
-    authors: [{ name: "Surjith" }],
+    keywords: ["Next.js", "Tailwind CSS"],
+    authors: [{ name: "abc" }],
     openGraph: {
       images: [
         {
-          url: "/img/opengraph.jpg",
+          url: "/img/_.jpg",
           width: 800,
           height: 600
         }

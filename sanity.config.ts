@@ -21,7 +21,7 @@ console.log(projectId);
 
 export default defineConfig({
   name: "default",
-  title: "Tech Innovate Template",
+  title: "Tech Innovate",
   basePath: "/studio",
   projectId: projectId,
   dataset: dataset,

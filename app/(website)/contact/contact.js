@@ -30,7 +30,7 @@ export default function Contact({ settings }) {
   const { submit: onSubmit } = useWeb3Forms({
     access_key: apiKey,
     settings: {
-      from_name: "Tech Innovate Template",
+      from_name: "Tech Innovate",
       subject: "New Contact Message from Tech Innovate Website"
     },
     onSuccess: (msg, data) => {
