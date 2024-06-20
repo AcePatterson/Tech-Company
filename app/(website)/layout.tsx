@@ -13,19 +13,19 @@ async function sharedMetaData(params) {
       "Tech Innovate - Harnessing IT for business success.",
     keywords: ["Next.js", "Tailwind CSS"],
     authors: [{ name: "abc" }],
-    openGraph: {
-      images: [
-        {
-          url: "/img/_.jpg",
-          width: 800,
-          height: 600
-        }
-      ]
-    },
-    twitter: {
-      title: "Tech Innovate Template",
-      card: "summary_large_image"
-    },
+    // openGraph: {
+    //   images: [
+    //     {
+    //       url: "/img/_.jpg",
+    //       width: 800,
+    //       height: 600
+    //     }
+    //   ]
+    // },
+    // twitter: {
+    //   title: "Tech Innovate Template",
+    //   card: "summary_large_image"
+    // },
     robots: {
       index: true,
       follow: true
