@@ -5,12 +5,11 @@ import Container from "@/components/container";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
-import {
-  MapPinIcon,
-  EnvelopeIcon,
-  PhoneIcon,
-  PaperAirplaneIcon
-} from "@heroicons/react/24/outline";
+import { BiLogoTelegram } from "react-icons/bi";
+import { FaPhone } from "react-icons/fa6";
+import { FaDiscord } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { RiMapPin2Fill } from "react-icons/ri";
 export default function Contact({ settings }) {
   const {
     register,
@@ -73,23 +72,23 @@ export default function Contact({ settings }) {
 
           <div className="mt-5">
             <div className="text-dark-600 mt-2 flex items-center space-x-2 dark:text-gray-400">
-              <MapPinIcon className="h-4 w-4" />
+              <RiMapPin2Fill className="h-4 w-4" />
               <span>1734 Sanfransico, CA 93063</span>
             </div>
             <div className="text-dark-600 mt-2 flex items-center space-x-2 dark:text-gray-400">
-              <EnvelopeIcon className="h-4 w-4" />
+              <MdEmail className="h-4 w-4" />
               <a href={`mailto:${"acepttrsn@gmail.com"}`}>
                 {"acepttrsn@gmail.com"}
               </a>
             </div>
             <div className="text-dark-600 mt-2 flex items-center space-x-2 dark:text-gray-400">
-              <PhoneIcon className="h-4 w-4" />
+              <FaPhone className="h-4 w-4" />
               <a href={`tel:${"+1(484)809-9633"}`}>
                 {"+1(484)809-9633"}
               </a>
             </div>
             <div className="text-dark-600 mt-2 flex items-center space-x-2 dark:text-gray-400">
-              <PaperAirplaneIcon className="h-4 w-4" />
+              <BiLogoTelegram className="h-4 w-4" />
               <a
                 href="https://t.me/abcdev_world"
                 style={{ color: "black" }}
@@ -99,7 +98,7 @@ export default function Contact({ settings }) {
               </a>
             </div>
             <div className="text-dark-600 mt-2 flex items-center space-x-2 dark:text-gray-400">
-              <PaperAirplaneIcon className="h-4 w-4" />
+              <FaDiscord className="h-4 w-4" />
               <a
                 href="https://discord.gg/SYJWZUxD"
                 style={{ color: "black" }}

@@ -4,10 +4,8 @@ import { Fragment } from "react";
 import { Menu, Transition, Disclosure } from "@headlessui/react";
 import Container from "@/components/container";
 import Link from "next/link";
-import Image from "next/image";
 import cx from "clsx";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
-import { myLoader } from "@/utils/all";
 
 export default function Navbar() {
   const leftmenu = [

@@ -8,50 +8,46 @@ export default function Home() {
       <Container>
         <div className="grid gap-10 md:grid-cols-2 lg:gap-10 ">
           <Post
-            aspect={"Armory is web3 community to get items!"}
-            imagePath={"/post/armory.png"}
-            PostedDate={"October 21, 2022"}
-            author={"Mario Sanchez"}
+            aspect="AI-powered location technology for automakers, mobile app developers, and logistics services."
+            imagePath="/post/mapbox.png"
+            PostedDate="October 21, 2022"
+            author="abc"
+            categories={"Technology"}
           />
           <Post
-            aspect={
-              "Amino Rewards is a feature within the Amino app, a social networking healthy app for communities."
-            }
-            imagePath={"/post/aminorewards.png"}
-            PostedDate={"October 21, 2022"}
-            author={"Mario Sanchez"}
+            aspect="Amino Rewards is a feature within the Amino app, a social networking healthy app for communities."
+            imagePath="/post/aminorewards.png"
+            PostedDate="October 21, 2022"
+            author="Mario Sanchez"
+            categories="Social"
           />
           <Post
-            aspect={
-              "Ceras Health is a healthcare company that provides innovative solutions for managing chronic conditions."
-            }
-            imagePath={"/post/cerashealth.png"}
-            PostedDate={"October 21, 2022"}
-            author={"abc"}
+            aspect="Ceras Health is a healthcare company that provides innovative solutions for managing chronic conditions."
+            imagePath="/post/cerashealth.png"
+            PostedDate="October 21, 2022"
+            author="abc"
+            categories="Health"
           />
           <Post
-            aspect={
-              "Bloxmoon is an online gambling platform that offers a wide range of casino games, including slots, table games, live dealer games, and more."
-            }
-            imagePath={"/post/bloxmoon.png"}
-            PostedDate={"October 21, 2022"}
-            author={"abc"}
+            aspect="Bloxmoon is an online gambling platform that offers a wide range of casino games, including slots, table games, live dealer games, and more."
+            imagePath="/post/bloxmoon.png"
+            PostedDate="October 21, 2022"
+            author="abc"
+            categories={"Game"}
           />
           <Post
-            aspect={
-              "CBET Casino is an online gambling platform that offers a wide range of casino games, including slots, table games, live dealer games, and more."
-            }
-            imagePath={"/post/cbet.png"}
-            PostedDate={"October 21, 2022"}
-            author={"abc"}
+            aspect="CBET Casino is an online gambling platform that offers a wide range of casino games, including slots, table games, live dealer games, and more."
+            imagePath="/post/cbet.png"
+            PostedDate="October 21, 2022"
+            author="abc"
+            categories="Game"
           />
           <Post
-            aspect={
-              "AI-powered location technology for automakers, mobile app developers, and logistics services."
-            }
-            imagePath={"/post/mapbox.png"}
-            PostedDate={"October 21, 2022"}
-            author={"abc"}
+            aspect="Armory is web3 community to get items!"
+            imagePath="/post/armory.png"
+            PostedDate="October 21, 2022"
+            author="Mario Sanchez"
+            categories="Community"
           />
         </div>
         <div className="mt-10 flex justify-center">

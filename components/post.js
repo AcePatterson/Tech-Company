@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { cx } from "@/utils/all";
-
+import CategoryLabel from "@/components/blog/category";
 export default function Post({
   aspect,
   minimal,
@@ -9,7 +9,8 @@ export default function Post({
   author,
   fontSize,
   fontWeight,
-  PostedDate
+  PostedDate,
+  categories
 }) {
   return (
     <>
@@ -26,6 +27,7 @@ export default function Post({
         </div>
 
         <div className={cx(minimal && "flex items-center")}>
+          <CategoryLabel categories={categories} nomargin={minimal} />
           <div>
             <h2
               className={cx(
